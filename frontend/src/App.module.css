@@ -1,0 +1,51 @@
+:root {
+  --background: #4C566A;
+  --sidebar: #2E3440;
+  --active-note: #81A1C1;
+  --note: #81A1C1;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: var(--background);
+    height: 100vh;
+}
+
+.nav {
+  background-color: var(--sidebar);
+  overflow: auto;
+}
+
+.button {
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    text-align: center;
+    
+    background-color: var(--note);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.active-note {
+  background-color: var(--active-note);
+}
+
+main {
+  background-color: var(--background);
+}
+
+.aiGeneratedcontainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+.aiGenerated {
+  background-color: var(--sidebar);
+  padding: 5px;
+}
